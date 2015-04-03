@@ -38,6 +38,12 @@ export HUBOT_FORECAST_IO_API_KEY=123abc456def
 
 You can obtain a forecast.io API key from their [developer page][3]
 
+For Imperial (US) units, add:
+
+```
+export HUBOT_FORECAST_IO_UNITS=us
+```
+
 ## Sample Interaction
 
 ```
