@@ -30,6 +30,8 @@ module.exports = (robot) ->
           forecastResponse = JSON.parse(body)
           minutely = ""
           hourly = ""
+          daily = ""
           minutely = forecastResponse.minutely.summary if (forecastResponse.minutely)
           hourly = forecastResponse.hourly.summary if (forecastResponse.hourly)
-          msg.send "In #{formattedLocation}, it is currently #{forecastResponse.currently.temperature}. Feels like #{forecastResponse.currently.apparentTemperature}. #{minutely} #{hourly}"
+          daily = forecastResponse.daily.summary if (forecastResponse.daily)
+          msg.send "In #{formattedLocation}, it is currently #{forecastResponse.currently.temperature}. Feels like #{forecastResponse.currently.apparentTemperature}. #{minutely} #{hourly} #{daily}"
