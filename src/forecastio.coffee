@@ -9,7 +9,7 @@
 #   HUBOT_FORECAST_IO_UNITS
 #
 # Commands:
-#   hubot weather in {location}
+#   hubot weather in <location> - Retrieves local weather conditions and forecast courtesy of forecast.io
 
 forecastIoApiKey = process.env.HUBOT_FORECAST_IO_API_KEY
 forecastIoUnits = process.env.HUBOT_FORECAST_IO_UNITS || 'us'
